@@ -181,12 +181,12 @@
 			<classifier>jdk15</classifier>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/cglib/cglib -->
+<!--
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
 			<version>3.2.6</version>
-		</dependency>
+		</dependency> -->
 
 
 	</dependencies>

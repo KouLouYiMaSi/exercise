@@ -1,9 +1,9 @@
 package com.huo.demos.proxy.inter.cglib;
 
-import com.huo.demos.proxy.inter.Liyifeng;
+import org.springframework.cglib.core.DebuggingClassWriter;
+import org.springframework.cglib.proxy.Enhancer;
 
-import net.sf.cglib.core.DebuggingClassWriter;
-import net.sf.cglib.proxy.Enhancer;
+import com.huo.demos.proxy.inter.Liyifeng;
 
 public class Test {
     public static void main(String[] args) {
@@ -13,6 +13,6 @@ public class Test {
         enhancer.setSuperclass(Liyifeng.class);
         enhancer.setCallback(starProxy);
         Liyifeng liyifeng = (Liyifeng) enhancer.create();
-        liyifeng.signContract();
+        liyifeng.invokeSign();
     }
 }

@@ -4,4 +4,5 @@ public interface SMCompany {
 
     public void signContract();
 
+    public void genStar();
 }

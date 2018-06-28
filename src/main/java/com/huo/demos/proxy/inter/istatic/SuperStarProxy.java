@@ -34,4 +34,10 @@ public class SuperStarProxy implements SMCompany {
         System.out.println("巨星签完合同，与对方探讨开演唱会的具体事宜。。。");
     }
 
+    @Override
+    public void genStar() {
+        // TODO Auto-generated method stub
+
+    }
+
 }

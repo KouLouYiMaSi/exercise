@@ -15,9 +15,9 @@ public class SuperStarProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("签约之前审核一下对方资质。。。。");
+        System.out.println(method.getName() + "签约之前审核一下对方资质。。。。");
         method.invoke(target, args);
-        System.out.println("签约之后商讨举办演唱会具体事宜。。。。");
+        System.out.println(method.getName() + "签约之后商讨举办演唱会具体事宜。。。。");
         return target;
     }
 

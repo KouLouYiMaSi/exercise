@@ -4,8 +4,8 @@ import javax.validation.constraints.Null;
 
 public class Test1 {
     public static void main(String[] args) {
-        System.out.println(method1());
-        System.out.println(testBasic());
+        String[] sts = {"1","2","3","4"};
+        System.out.println(String.join(",", sts));
     }
 
     public static int method1() {
