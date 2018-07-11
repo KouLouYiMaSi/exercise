@@ -12,10 +12,10 @@ import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 public class Producer {
-    private static final int MSG_SIZE = 100;
-    private static final String TOPIC = "stock-info";
-    private static final String SERVER = "192.168.99.100:9092";
-    private static KafkaProducer<String, String> producer = null;
+    public static final int MSG_SIZE = 100;
+    public static final String TOPIC = "stock-info";
+    public static final String SERVER = "192.168.99.100:9092";
+    public static KafkaProducer<String, String> producer = null;
     static {
         Properties configs = initConfig();
         producer = new KafkaProducer<String, String>(configs);
@@ -39,7 +39,7 @@ public class Producer {
      *
      * @return
      */
-    private static StockQuotationInfo createQuotationInfo() {
+    public static StockQuotationInfo createQuotationInfo() {
         StockQuotationInfo quotationInfo = new StockQuotationInfo();
         Random r = new Random();
         Integer stockCode = 600100 + r.nextInt(10);
