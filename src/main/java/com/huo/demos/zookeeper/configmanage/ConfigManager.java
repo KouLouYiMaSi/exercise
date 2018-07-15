@@ -1,4 +1,4 @@
-package com.huo.demos.zookeeper;
+package com.huo.demos.zookeeper.configmanage;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.I0Itec.zkclient.ZkClient;

@@ -1,9 +1,13 @@
-package com.huo.demos.zookeeper;
+package com.huo.demos.zookeeper.configmanage;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.concurrent.TimeUnit;
 
 import org.I0Itec.zkclient.IZkDataListener;
 import org.I0Itec.zkclient.ZkClient;
-
-import java.util.concurrent.TimeUnit;
 
 public class ClientApp {
 
@@ -45,6 +49,16 @@ public class ClientApp {
      * @throws InterruptedException
      */
     public void run() throws InterruptedException {
+
+        Map<String, String> map = new HashMap<>();
+        Iterator<String> iter = map.keySet().iterator();
+        Iterator<Entry<String, String>> iter1 = map.entrySet().iterator();
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+
+        }
+        for (String key : map.keySet()) {
+
+        }
 
         getFtpConfig();
 
